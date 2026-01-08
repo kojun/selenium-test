@@ -11,10 +11,9 @@ const {Options} = require('selenium-webdriver/ie');
                          setIeOptions(ieOptions).
                          build();
   try {
-    await driver.get('http://www.bing.com');
-    let elem = await driver.findElement(By.id('sb_form_q'));
-    await elem.sendKeys('WebDriver', Key.RETURN);
-    await driver.wait(until.titleIs('WebDriver - Bing'), 1000);
+    await driver.get('http://nikkei.com');
+    await driver.wait(until.titleContains("日本経済新聞"), 5000);
+    console.log("TITLE: " + await driver.getTitle());
   } finally {
     await driver.quit();
   }

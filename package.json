@@ -1,0 +1,24 @@
+{
+  "name": "selenium-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kojun/selenium-test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/kojun/selenium-test/issues"
+  },
+  "homepage": "https://github.com/kojun/selenium-test#readme",
+  "dependencies": {
+    "selenium-webdriver": "^4.39.0"
+  }
+}

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha \"tests/**/*.spec.js\""
   },
   "repository": {
     "type": "git",
@@ -20,5 +20,8 @@
   "homepage": "https://github.com/kojun/selenium-test#readme",
   "dependencies": {
     "selenium-webdriver": "^4.39.0"
+  },
+  "devDependencies": {
+    "mocha": "^11.7.5"
   }
 }
